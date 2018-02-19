@@ -31,6 +31,42 @@ body {
 	width: 80%;
 }
 
+[class^="button_"] {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 13px 45px;
+	border: none;
+	cursor: pointer;
+	border-radius: 17px;
+	outline: 0;
+}
+
+.button_brown {
+	background: $brown;
+	color: $white;
+	&:hover {
+		background: $black;
+	}
+}
+
+.pagination {
+	margin: 0 auto 1.5%;
+	span {
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		border: 2px solid $brown;
+		border-radius: 50%;
+		margin: 4px;
+		cursor: pointer;
+		&:hover {
+			background: $brown;
+		}
+	}
+}
+
 [class^="col-"] {
 	float: left;
 	min-height: 1px;
@@ -90,3 +126,46 @@ nav {
 	}
 }
 
+/* --HEADER-- */
+header {
+	text-transform: uppercase;
+	background: url("../images/header_background.jpg") center 0/cover;
+	text-align: center;
+	padding: 1%;
+	position: relative;
+	h1 {
+		padding: 13% 0 0;
+		margin: 0;
+		font-size: 72px;
+		letter-spacing: -1px;
+		color: $white;
+		span {
+			color: $brown;
+		}
+	}
+	p {
+		font-size: 24px;
+		font-weight: 700;
+		color: $white;
+		padding: 0.5% 0 2%;
+		margin: 0;
+	}
+	.button_brown {
+		margin: 1% 0 10%;
+	}
+	.btn_icon {
+		position: absolute;
+		bottom: -30px;
+		right: 5%;
+		cursor: pointer;
+		width: 60px;
+		height: 60px;
+		outline: 0;
+		border: none;
+		border-radius: 50%;
+		background: $brown;
+		color: $white;
+		font-size: 40px;
+		box-shadow: 0 0 10px $dark_grey;
+	}
+}
