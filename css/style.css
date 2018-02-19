@@ -4,22 +4,44 @@
   box-sizing: border-box; }
 
 body {
-  background: #FFF;
+  background: #F7F7F7;
   max-width: 1600px;
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   padding: 0; }
 
+h2, h4 {
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 0; }
+
+.h2_black {
+  color: #000; }
+
+h4 {
+  font-size: 14px;
+  color: #AEAEAE;
+  margin-top: 6px; }
+
+p {
+  font-weight: 300; }
+
+section {
+  padding: 2.5% 0 6.5%; }
+
 .container {
   margin: 0 auto;
-  width: 80%; }
+  width: 80%;
+  text-align: center; }
 
 [class^="button_"] {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
-  padding: 13px 45px;
+  padding: 14px 45px;
   border: none;
   cursor: pointer;
   border-radius: 17px;
@@ -47,6 +69,9 @@ body {
 [class^="col-"] {
   float: left;
   min-height: 1px; }
+
+.col-left {
+  text-align: left; }
 
 /* --GRID-- */
 .col-1 {
@@ -114,7 +139,7 @@ nav {
       nav ul li a {
         color: #FFF;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 700;
         text-transform: uppercase; }
 
@@ -155,5 +180,19 @@ header {
     color: #FFF;
     font-size: 40px;
     box-shadow: 0 0 10px #242424; }
+
+/* --ABOUT US-- */
+.about_us .row {
+  margin-top: 3.5%; }
+  .about_us .row .col-left {
+    padding-right: 4%; }
+    .about_us .row .col-left p {
+      color: #242424;
+      font-size: 13px;
+      margin: 0;
+      padding-bottom: 5%;
+      line-height: 1.7; }
+  .about_us .row img {
+    box-shadow: 0 15px 30px #AEAEAE; }
 
 /*# sourceMappingURL=style.css.map */
