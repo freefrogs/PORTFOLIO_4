@@ -1,0 +1,91 @@
+/* --GENERAL-- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #FFF;
+  max-width: 1600px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  padding: 0; }
+
+.container {
+  margin: 0 auto;
+  width: 80%; }
+
+[class^="col-"] {
+  float: left;
+  min-height: 1px; }
+
+/* --GRID-- */
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+/* --CLEARFIX-- */
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* --NAV-- */
+nav {
+  background: #000; }
+  nav img {
+    margin: 0;
+    padding: 20px 0; }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 85%;
+    display: inline-block;
+    float: right; }
+    nav ul li {
+      display: inline-block;
+      float: left;
+      padding: 35px 1%; }
+      nav ul li:hover {
+        border-bottom: 5px solid #B88B58; }
+      nav ul li a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */

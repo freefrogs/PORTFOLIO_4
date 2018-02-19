@@ -22,13 +22,13 @@ body {
 	background: $white;
 	max-width: 1600px;
 	font-family: 'Montserrat', sans-serif;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 
 .container {
 	margin: 0 auto;
-	width: 72%;
+	width: 80%;
 }
 
 [class^="col-"] {
@@ -57,3 +57,36 @@ body {
 	display: table;
 	clear: both;
 }
+
+/* --NAV-- */
+nav {
+	background: $black;
+	img {
+		margin: 0;
+		padding: 20px 0;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		width: 85%;
+		display: inline-block;
+		float: right;
+		li {
+			display: inline-block;
+			float: left;
+			padding: 35px 1%;
+			&:hover {
+				border-bottom: 5px solid $brown;
+			}
+			a {
+				color: $white;
+				text-decoration: none;
+				font-size: 14px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
