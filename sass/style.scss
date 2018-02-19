@@ -26,7 +26,7 @@ body {
 	padding: 0;
 }
 
-h2, h4 {
+h2, h3, h4 {
 	text-transform: uppercase;
 }
 
@@ -37,6 +37,14 @@ h2 {
 
 .h2_black {
 	color: $black;
+}
+
+.h2_white {
+	color: $white;
+}
+
+h3 {
+	font-size: 18px;
 }
 
 h4 {
@@ -50,7 +58,7 @@ p {
 }
 
 section {
-	padding: 2.5% 0 6.5%;
+	padding: 2.5% 0 0;
 }
 
 .container {
@@ -204,6 +212,7 @@ header {
 
 /* --ABOUT US-- */
 .about_us {
+	padding-bottom: 6.5%;
 	.row {
 		margin-top: 3.5%;
 		.col-left {
@@ -218,6 +227,42 @@ header {
 		}
 		img {
 			box-shadow: 0 15px 30px $light_grey;
+			width: 100%;
 		}
 	}
 }
+
+/* --SERVICES-- */
+.services {
+	background: $black;
+	padding-bottom: 3%;
+	.row {
+		margin-top: 4%;
+		i {
+			color: $brown;
+			font-size: 65px;
+			padding-bottom: 10px;
+		}
+		h3 {
+			color: $white;
+			margin-bottom: 0;
+			line-height: 1.4;
+		}
+		p {
+			color: $grey;
+			font-size: 12px;
+			margin-top: 0;
+			line-height: 1.7;
+		}
+		[class^="col-"] {
+			border-right: 1px solid $grey;
+			padding: 2% 4%;
+			height: 210px;
+			&:first-child {
+				border-left: 1px solid $grey;
+			}
+		}
+	}
+}
+
+/* --OUR PROJECTS-- */

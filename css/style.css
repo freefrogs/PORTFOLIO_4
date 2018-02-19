@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   padding: 0; }
 
-h2, h4 {
+h2, h3, h4 {
   text-transform: uppercase; }
 
 h2 {
@@ -19,6 +19,12 @@ h2 {
 
 .h2_black {
   color: #000; }
+
+.h2_white {
+  color: #FFF; }
+
+h3 {
+  font-size: 18px; }
 
 h4 {
   font-size: 14px;
@@ -29,7 +35,7 @@ p {
   font-weight: 300; }
 
 section {
-  padding: 2.5% 0 6.5%; }
+  padding: 2.5% 0 0; }
 
 .container {
   margin: 0 auto;
@@ -182,17 +188,48 @@ header {
     box-shadow: 0 0 10px #242424; }
 
 /* --ABOUT US-- */
-.about_us .row {
-  margin-top: 3.5%; }
-  .about_us .row .col-left {
-    padding-right: 4%; }
-    .about_us .row .col-left p {
-      color: #242424;
-      font-size: 13px;
-      margin: 0;
-      padding-bottom: 5%;
+.about_us {
+  padding-bottom: 6.5%; }
+  .about_us .row {
+    margin-top: 3.5%; }
+    .about_us .row .col-left {
+      padding-right: 4%; }
+      .about_us .row .col-left p {
+        color: #242424;
+        font-size: 13px;
+        margin: 0;
+        padding-bottom: 5%;
+        line-height: 1.7; }
+    .about_us .row img {
+      box-shadow: 0 15px 30px #AEAEAE;
+      width: 100%; }
+
+/* --SERVICES-- */
+.services {
+  background: #000;
+  padding-bottom: 3%; }
+  .services .row {
+    margin-top: 4%; }
+    .services .row i {
+      color: #B88B58;
+      font-size: 65px;
+      padding-bottom: 10px; }
+    .services .row h3 {
+      color: #FFF;
+      margin-bottom: 0;
+      line-height: 1.4; }
+    .services .row p {
+      color: #7E7E7E;
+      font-size: 12px;
+      margin-top: 0;
       line-height: 1.7; }
-  .about_us .row img {
-    box-shadow: 0 15px 30px #AEAEAE; }
+    .services .row [class^="col-"] {
+      border-right: 1px solid #7E7E7E;
+      padding: 2% 4%;
+      height: 210px; }
+      .services .row [class^="col-"]:first-child {
+        border-left: 1px solid #7E7E7E; }
+
+/* --OUR PROJECTS-- */
 
 /*# sourceMappingURL=style.css.map */
