@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   padding: 0; }
 
-h2, h3, h4, h5 {
+h2, h3, h4 {
   text-transform: uppercase; }
 
 h2 {
@@ -30,9 +30,6 @@ h4 {
   font-size: 14px;
   color: #AEAEAE;
   margin-top: 6px; }
-
-h5 {
-  font-size: 21px; }
 
 p {
   font-weight: 300; }
@@ -316,10 +313,11 @@ header {
     .our_team .col-team img {
       border-radius: 50%;
       margin: 14% 0 10%; }
-    .our_team .col-team h5 {
+    .our_team .col-team h3 {
       font-weight: 400;
       color: #242424;
-      margin: 0; }
+      margin: 0;
+      font-size: 21px; }
     .our_team .col-team p {
       font-size: 14px;
       color: #242424;
@@ -338,5 +336,40 @@ header {
         margin: 1px; }
         .our_team .col-team .div-icon a:hover {
           background: #B88B58; }
+
+/* --HAPPY CLIENTS-- */
+.happy_clients .client {
+  border-radius: 50%;
+  margin-top: 5%;
+  margin-bottom: 1%; }
+.happy_clients h3 {
+  font-size: 24px;
+  color: #000;
+  text-transform: none;
+  line-height: 0; }
+.happy_clients h5 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  line-height: 0; }
+.happy_clients i {
+  color: #7E7E7E;
+  font-size: 25px;
+  padding-top: 10px; }
+.happy_clients p {
+  font-size: 14px;
+  color: #7E7E7E;
+  padding: 0 15%;
+  line-height: 1.8; }
+.happy_clients .pagination {
+  margin: 3.5%; }
+.happy_clients .brands {
+  text-align: center;
+  background: #FFF;
+  padding: 0 8%;
+  border-top: 1px solid #CFCFCF;
+  box-shadow: 0 3px 3px -2px #CFCFCF; }
+  .happy_clients .brands img {
+    padding: 3.5%; }
 
 /*# sourceMappingURL=style.css.map */
