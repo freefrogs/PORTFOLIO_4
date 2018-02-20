@@ -10,7 +10,7 @@ body {
   margin: 0 auto;
   padding: 0; }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   text-transform: uppercase; }
 
 h2 {
@@ -30,6 +30,9 @@ h4 {
   font-size: 14px;
   color: #AEAEAE;
   margin-top: 6px; }
+
+h5 {
+  font-size: 21px; }
 
 p {
   font-weight: 300; }
@@ -294,5 +297,46 @@ header {
           font-size: 12px;
           line-height: 1.5;
           padding: 0 15%; }
+
+/* --OUR TEAM-- */
+.our_team {
+  background: url("../images/ourTeam_background.jpg") center 0/cover;
+  padding-bottom: 1.5%; }
+  .our_team h4 {
+    margin-bottom: 4%; }
+  .our_team .pagination {
+    margin-top: 4%; }
+  .our_team .col-team {
+    background: #FFF;
+    width: 31.666%;
+    margin-right: 2.5%;
+    border-radius: 3px; }
+    .our_team .col-team:last-child {
+      margin-right: 0; }
+    .our_team .col-team img {
+      border-radius: 50%;
+      margin: 14% 0 10%; }
+    .our_team .col-team h5 {
+      font-weight: 400;
+      color: #242424;
+      margin: 0; }
+    .our_team .col-team p {
+      font-size: 14px;
+      color: #242424;
+      margin: 2%; }
+    .our_team .col-team .div-icon {
+      margin: 11%; }
+      .our_team .col-team .div-icon a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        line-height: 30px;
+        font-size: 15px;
+        background: #BEBEBE;
+        color: #FFF;
+        margin: 1px; }
+        .our_team .col-team .div-icon a:hover {
+          background: #B88B58; }
 
 /*# sourceMappingURL=style.css.map */

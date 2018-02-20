@@ -26,7 +26,7 @@ body {
 	padding: 0;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
 	text-transform: uppercase;
 }
 
@@ -51,6 +51,10 @@ h4 {
 	font-size: 14px;
 	color: $light_grey;
 	margin-top: 6px;
+}
+
+h5 {
+	font-size: 21px;
 }
 
 p {
@@ -340,6 +344,58 @@ header {
 					font-size: 12px;
 					line-height: 1.5;
 					padding: 0 15%;
+				}
+			}
+		}
+	}
+}
+
+/* --OUR TEAM-- */
+.our_team {
+	background: url("../images/ourTeam_background.jpg") center 0/cover;
+	padding-bottom: 1.5%;
+	h4 {
+		margin-bottom: 4%;
+	}
+	.pagination {
+		margin-top: 4%;
+	}
+	.col-team {
+		background: $white;
+		width: 31.666%;
+		margin-right: 2.5%;
+		border-radius: 3px;
+		&:last-child {
+			margin-right: 0;
+		}
+		img {
+			border-radius: 50%;
+			margin: 14% 0 10%;
+		}
+		h5 {
+			font-weight: 400;
+			color: $dark_grey;
+			margin: 0;
+		}
+		p {
+			font-size: 14px;
+			color: $dark_grey;
+			margin: 2%;
+		}
+		.div-icon {
+			margin: 11%;
+			a {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				line-height: 30px;
+				font-size: 15px;
+				background: $grey_icon;
+				color: $white;
+				margin: 1px;
+				&:hover {
+					background: $brown;
 				}
 			}
 		}
