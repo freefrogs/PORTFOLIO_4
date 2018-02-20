@@ -32,6 +32,10 @@ h4 {
   color: #AEAEAE;
   margin-top: 6px; }
 
+h6 {
+  font-size: 10px;
+  color: #AEAEAE; }
+
 p {
   font-weight: 300; }
 
@@ -400,8 +404,6 @@ header {
       .price .row .col-price h2 {
         padding-top: 16px; }
       .price .row .col-price h6 {
-        font-size: 10px;
-        color: #AEAEAE;
         line-height: 0;
         padding-top: 2px; }
       .price .row .col-price p {
@@ -448,5 +450,69 @@ header {
     margin: 3%; }
   .price_description button {
     margin-bottom: 5.5%; }
+
+/* --SOME FACTS-- */
+.some_facts {
+  background: #000; }
+  .some_facts .row {
+    padding: 0.5% 0 1.5%; }
+    .some_facts .row [class^="col-"] {
+      padding: 4%; }
+    .some_facts .row .number {
+      font-size: 48px;
+      color: #B88B58;
+      margin: 0;
+      line-height: 0.7; }
+    .some_facts .row h3 {
+      color: #FFF;
+      line-height: 1.3; }
+      .some_facts .row h3::before {
+        content: "";
+        width: 20px;
+        height: 3px;
+        background: #7E7E7E;
+        display: block;
+        margin: 6px auto; }
+    .some_facts .row p {
+      font-size: 12px;
+      color: #7E7E7E;
+      line-height: 1.8;
+      margin-top: -10px; }
+    .some_facts .row .p_margin {
+      padding-top: 23px; }
+  .some_facts .tell_about_us {
+    background: #FEFEFE;
+    border-top: 1px solid #CFCFCF;
+    border-bottom: 1px solid #CFCFCF;
+    text-align: center;
+    padding: 0.5% 0; }
+    .some_facts .tell_about_us h4, .some_facts .tell_about_us h6 {
+      display: inline-block; }
+    .some_facts .tell_about_us h6 {
+      padding-right: 6%;
+      padding-left: 2px; }
+    .some_facts .tell_about_us img {
+      vertical-align: middle;
+      padding-right: 10px; }
+    .some_facts .tell_about_us .icons {
+      display: inline-block;
+      width: 40%; }
+      .some_facts .tell_about_us .icons .fa {
+        font-size: 15px;
+        color: #FFF;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%; }
+      .some_facts .tell_about_us .icons .fa-twitter {
+        background: #34C5F0; }
+      .some_facts .tell_about_us .icons .fa-linkedin {
+        background: #127CB4; }
+      .some_facts .tell_about_us .icons .fa-facebook {
+        background: #336297; }
+      .some_facts .tell_about_us .icons .fa-google-plus {
+        background: #E74237; }
+      .some_facts .tell_about_us .icons .fa-pinterest-p {
+        background: #B71C29; }
 
 /*# sourceMappingURL=style.css.map */
