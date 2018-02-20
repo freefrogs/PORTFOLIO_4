@@ -411,4 +411,42 @@ header {
       .price .row .col-price button {
         margin-top: 6%; }
 
+/* --PRICE DESCRIPTION-- */
+.price_description {
+  background: #FFF;
+  border-top: 1px solid #CFCFCF;
+  border-bottom: 1px solid #CFCFCF; }
+  .price_description .row {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 2%; }
+    .price_description .row .col-left {
+      padding-left: 3.5%;
+      margin-top: 2.5%; }
+      .price_description .row .col-left .big_list {
+        list-style: url("../images/premium_check.png"); }
+        .price_description .row .col-left .big_list div {
+          padding-left: 4%; }
+          .price_description .row .col-left .big_list div h3 {
+            margin: 0;
+            line-height: 0;
+            font-size: 21px;
+            color: #242424;
+            margin-bottom: 0;
+            vertical-align: 12px;
+            display: inline-block; }
+          .price_description .row .col-left .big_list div p {
+            font-size: 14px;
+            color: #5B5B5B;
+            margin: -9px 0 30px; }
+          .price_description .row .col-left .big_list div .p_list {
+            line-height: 1.8; }
+            .price_description .row .col-left .big_list div .p_list span {
+              text-transform: uppercase;
+              display: inline-block;
+              padding-top: 5px; }
+  .price_description .pagination {
+    margin: 3%; }
+  .price_description button {
+    margin-bottom: 5.5%; }
+
 /*# sourceMappingURL=style.css.map */

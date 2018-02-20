@@ -493,3 +493,52 @@ header {
 		}
 	}
 }
+
+/* --PRICE DESCRIPTION-- */
+.price_description {
+	background: $white;
+	border-top: 1px solid $grey_border;
+	border-bottom: 1px solid $grey_border;
+	.row {
+		border-bottom: 1px solid #D8D8D8;
+		padding-bottom: 2%;
+		.col-left {
+			padding-left: 3.5%;
+			margin-top: 2.5%;
+			.big_list {
+				list-style: url("../images/premium_check.png");
+				div {
+					padding-left: 4%;
+					h3 {
+						margin: 0;
+						line-height: 0;
+						font-size: 21px;
+						color: $dark_grey;
+						margin-bottom: 0;
+						vertical-align: 12px;
+						display: inline-block;
+					}
+					p {
+						font-size: 14px;
+						color: #5B5B5B;
+						margin: -9px 0 30px;
+					}
+					.p_list {
+						line-height: 1.8;
+						span {
+							text-transform: uppercase;
+							display: inline-block;
+							padding-top: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.pagination {
+		margin: 3%;
+	}
+	button {
+		margin-bottom: 5.5%;
+	}
+}
