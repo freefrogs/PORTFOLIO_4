@@ -10,11 +10,12 @@ body {
   margin: 0 auto;
   padding: 0; }
 
-h2, h3, h4 {
+h2, h3, h4, h6 {
   text-transform: uppercase; }
 
 h2 {
   font-size: 30px;
+  margin-top: 2%;
   margin-bottom: 0; }
 
 .h2_black {
@@ -65,6 +66,12 @@ section {
   color: #FFF; }
   .button_brown:hover {
     background: #000; }
+
+.button_grey {
+  background: #373737;
+  color: #FFF; }
+  .button_grey:hover {
+    background: #B88B58; }
 
 .pagination {
   margin: 0 auto 1.5%; }
@@ -368,8 +375,40 @@ header {
   background: #FFF;
   padding: 0 8%;
   border-top: 1px solid #CFCFCF;
-  box-shadow: 0 3px 3px -2px #CFCFCF; }
+  box-shadow: 0 5px 3px -2px #CFCFCF;
+  margin-bottom: 4px; }
   .happy_clients .brands img {
     padding: 3.5%; }
+
+/* --PRICE-- */
+.price {
+  background: #EDEDED;
+  padding-bottom: 4.5%; }
+  .price .row {
+    margin-top: 4%; }
+    .price .row .col-price {
+      width: 22.75%;
+      margin-right: 3%;
+      background: #FFF;
+      border-radius: 3px;
+      padding: 3% 0; }
+      .price .row .col-price:last-child {
+        margin-right: 0; }
+      .price .row .col-price h2, .price .row .col-price h4 {
+        color: #242424;
+        line-height: 0; }
+      .price .row .col-price h2 {
+        padding-top: 16px; }
+      .price .row .col-price h6 {
+        font-size: 10px;
+        color: #AEAEAE;
+        line-height: 0;
+        padding-top: 2px; }
+      .price .row .col-price p {
+        font-weight: 700;
+        color: #7E7E7E;
+        font-size: 10px; }
+      .price .row .col-price button {
+        margin-top: 6%; }
 
 /*# sourceMappingURL=style.css.map */

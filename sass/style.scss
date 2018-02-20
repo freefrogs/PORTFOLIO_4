@@ -26,12 +26,13 @@ body {
 	padding: 0;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h6 {
 	text-transform: uppercase;
 }
 
 h2 {
 	font-size: 30px;
+	margin-top: 2%;
 	margin-bottom: 0;
 }
 
@@ -93,6 +94,14 @@ section {
 	color: $white;
 	&:hover {
 		background: $black;
+	}
+}
+
+.button_grey {
+	background: $grey_btn;
+	color: $white;
+	&:hover {
+		background: $brown;
 	}
 }
 
@@ -437,9 +446,50 @@ header {
 		background: $white;
 		padding: 0 8%;
 		border-top: 1px solid $grey_border;
-		box-shadow: 0 3px 3px -2px $grey_border;
+		box-shadow: 0 5px 3px -2px $grey_border;
+		margin-bottom: 4px;
 		img {
 			padding: 3.5%;
+		}
+	}
+}
+
+/* --PRICE-- */
+.price {
+	background: $grey_background;
+	padding-bottom: 4.5%;
+	.row {
+		margin-top: 4%;
+		.col-price {
+			width: 22.75%;
+			margin-right: 3%;
+			background: $white;
+			border-radius: 3px;
+			padding: 3% 0;
+			&:last-child {
+				margin-right: 0;
+			}
+			h2,h4 {
+				color: $dark_grey;
+				line-height: 0;
+			}
+			h2 {
+				padding-top: 16px;
+			}
+			h6 {
+				font-size: 10px;
+				color: $light_grey;
+				line-height: 0;
+				padding-top: 2px;
+			}
+			p {
+				font-weight: 700;
+				color: $grey;
+				font-size: 10px;
+			}
+			button {
+				margin-top: 6%;
+			}
 		}
 	}
 }
