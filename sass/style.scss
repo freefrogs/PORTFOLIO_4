@@ -471,6 +471,9 @@ header {
 			background: $white;
 			border-radius: 3px;
 			padding: 3% 0;
+			&:hover {
+				box-shadow: 0 5px 15px $grey_btn;
+			}
 			&:last-child {
 				margin-right: 0;
 			}
@@ -624,6 +627,57 @@ header {
 			}
 			.fa-pinterest-p {
 				background: #B71C29;
+			}
+		}
+	}
+}
+
+/* --CONTACT US--*/
+.contact_us {
+	.contact_form {
+		text-align: center;
+		background: $white_background;
+		width: 40%;
+		margin: 0 auto;
+		form {
+			padding: 10% 2% 6%;
+			input {
+				border: none;
+				border-bottom: 2px solid $grey_form;
+				background: inherit;
+				padding: 12px 0;
+				&::placeholder {
+					font-size: 13px;
+				}
+				&:focus {
+					border: none;
+					border-bottom: 2px solid $black;
+					outline: 0;
+				}
+			}
+			.input_short {
+			width: 47%;
+			margin: 0 3.5% 5% 0;
+			}
+			.input_margin {
+				margin-right: 0;
+			}
+			.input_long {
+				width: 98%;
+				margin: 0 1% 5%;
+			}
+			textarea {
+				@extend input;
+				width: 98%;
+				margin: 10% 1% 0;
+				padding: 0;
+				&::placeholder {
+					font-size: 15px;
+				}
+			}
+			button {
+				display: block;
+				margin: 8% auto;
 			}
 		}
 	}

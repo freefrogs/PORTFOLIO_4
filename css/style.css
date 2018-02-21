@@ -396,6 +396,8 @@ header {
       background: #FFF;
       border-radius: 3px;
       padding: 3% 0; }
+      .price .row .col-price:hover {
+        box-shadow: 0 5px 15px #373737; }
       .price .row .col-price:last-child {
         margin-right: 0; }
       .price .row .col-price h2, .price .row .col-price h4 {
@@ -514,5 +516,42 @@ header {
         background: #E74237; }
       .some_facts .tell_about_us .icons .fa-pinterest-p {
         background: #B71C29; }
+
+/* --CONTACT US--*/
+.contact_us .contact_form {
+  text-align: center;
+  background: #F7F7F7;
+  width: 40%;
+  margin: 0 auto; }
+  .contact_us .contact_form form {
+    padding: 10% 2% 6%; }
+    .contact_us .contact_form form input, .contact_us .contact_form form textarea {
+      border: none;
+      border-bottom: 2px solid #9E9E9E;
+      background: inherit;
+      padding: 12px 0; }
+      .contact_us .contact_form form input::placeholder, .contact_us .contact_form form textarea::placeholder {
+        font-size: 13px; }
+      .contact_us .contact_form form input:focus, .contact_us .contact_form form textarea:focus {
+        border: none;
+        border-bottom: 2px solid #000;
+        outline: 0; }
+    .contact_us .contact_form form .input_short {
+      width: 47%;
+      margin: 0 3.5% 5% 0; }
+    .contact_us .contact_form form .input_margin {
+      margin-right: 0; }
+    .contact_us .contact_form form .input_long {
+      width: 98%;
+      margin: 0 1% 5%; }
+    .contact_us .contact_form form textarea {
+      width: 98%;
+      margin: 10% 1% 0;
+      padding: 0; }
+      .contact_us .contact_form form textarea::placeholder {
+        font-size: 15px; }
+    .contact_us .contact_form form button {
+      display: block;
+      margin: 8% auto; }
 
 /*# sourceMappingURL=style.css.map */
