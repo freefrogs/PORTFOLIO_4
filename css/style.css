@@ -544,7 +544,8 @@ header {
     .contact_us .contact_form form textarea {
       width: 98%;
       margin: 10% 1% 0;
-      padding: 0; }
+      padding: 0;
+      resize: none; }
       .contact_us .contact_form form textarea::placeholder {
         font-size: 15px; }
     .contact_us .contact_form form button {
@@ -572,5 +573,56 @@ header {
           text-align: center;
           font-size: 18px;
           margin: 0 3.5% 0 7%; }
+
+/* --FOOTER-- */
+footer {
+  background: #000;
+  border-top: 1px solid #CFCFCF; }
+  footer .con-rel {
+    position: relative; }
+  footer .row {
+    padding: 3% 0; }
+    footer .row .fa_icon {
+      display: inline-block;
+      background: #373737; }
+      footer .row .fa_icon:hover {
+        background: #B88B58; }
+    footer .row .awax {
+      font-weight: 400;
+      color: #FFF;
+      font-size: 14px;
+      position: absolute;
+      bottom: 15%;
+      left: 6%; }
+    footer .row p {
+      color: #7E7E7E;
+      font-size: 12px;
+      margin: 0;
+      padding-right: 1%;
+      line-height: 1.7; }
+    footer .row form {
+      background: #373737;
+      text-align: center;
+      width: 90%;
+      padding: 2% 0 12%;
+      margin: 0 auto;
+      border-radius: 3px; }
+      footer .row form input, footer .row .contact_us .contact_form form textarea, .contact_us .contact_form footer .row form textarea {
+        display: block;
+        margin: 8% auto;
+        border: none;
+        border-bottom: 2px solid #AEAEAE;
+        background: inherit;
+        padding: 12px 0;
+        text-align: center;
+        color: #FFF; }
+        footer .row form input::placeholder, footer .row .contact_us .contact_form form textarea::placeholder, .contact_us .contact_form footer .row form textarea::placeholder {
+          color: #9E9E9E;
+          font-size: 13px;
+          font-weight: 300; }
+        footer .row form input:focus, footer .row .contact_us .contact_form form textarea:focus, .contact_us .contact_form footer .row form textarea:focus {
+          border: none;
+          border-bottom: 2px solid #FFF;
+          outline: 0; }
 
 /*# sourceMappingURL=style.css.map */

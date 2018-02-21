@@ -669,6 +669,7 @@ header {
 				width: 98%;
 				margin: 10% 1% 0;
 				padding: 0;
+				resize: none;
 				&::placeholder {
 					font-size: 15px;
 				}
@@ -704,6 +705,68 @@ header {
 						font-size: 18px;
 						margin: 0 3.5% 0 7%;
 					}
+				}
+			}
+		}
+	}
+}
+
+/* --FOOTER-- */
+footer {
+	background: $black;
+	border-top: 1px solid $grey_border;
+	.con-rel {
+		position: relative;
+	}
+	.row {
+		padding: 3% 0;
+		.fa_icon {
+			display: inline-block;
+			background: $grey_btn;
+			&:hover {
+				background: $brown;
+			}
+		}
+		.awax {
+			font-weight: 400;
+			color: $white;
+			font-size: 14px;
+			position: absolute;
+			bottom: 15%;
+			left: 6%;
+		}
+		p {
+			color: $grey;
+			font-size: 12px;
+			margin: 0;
+			padding-right: 1%;
+			line-height: 1.7;
+		}
+		form {
+			background: $grey_btn;
+			text-align: center;
+			width: 90%;
+			padding: 2% 0 12%;
+			margin: 0 auto;
+			border-radius: 3px;
+			input {
+				display: block;
+				margin: 8% auto;
+				border: none;
+				border-bottom: 2px solid $light_grey;
+				background: inherit;
+				padding: 12px 0;
+				text-align: center;
+				color: $white;
+				&::placeholder {
+					color: $grey_form;
+					font-size: 13px;
+					font-weight: 300;
+				}
+				&:focus {
+					border: none;
+					border-bottom: 2px solid $white;
+					outline: 0;
 				}
 			}
 		}
