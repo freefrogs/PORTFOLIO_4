@@ -169,22 +169,84 @@ nav {
   nav img {
     margin: 0;
     padding: 20px 0; }
-  nav ul {
+  nav input, nav .contact_us .contact_form form textarea, .contact_us .contact_form form nav textarea, nav label {
+    display: none; }
+  @media (max-width: 1299px) {
+    nav label {
+      position: fixed;
+      display: block;
+      top: 20px;
+      right: 20px;
+      height: 50px;
+      width: 50px;
+      background: #373737;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #B88B58;
+      z-index: 1; }
+      nav label span {
+        position: absolute;
+        width: 60%;
+        height: 2px;
+        top: 50%;
+        left: 20%;
+        background: #FFF;
+        display: block;
+        transition: .5s; }
+      nav label span:first-child {
+        top: 15px; }
+      nav label span:last-child {
+        top: 35px; }
+    nav label:hover {
+      cursor: pointer; }
+    nav input:checked + label span, nav .contact_us .contact_form form textarea:checked + label span, .contact_us .contact_form form nav textarea:checked + label span {
+      opacity: 0;
+      top: 50%; }
+    nav input:checked + label span:first-child, nav .contact_us .contact_form form textarea:checked + label span:first-child, .contact_us .contact_form form nav textarea:checked + label span:first-child {
+      opacity: 1;
+      transform: rotate(45deg); }
+    nav input:checked + label span:last-child, nav .contact_us .contact_form form textarea:checked + label span:last-child, .contact_us .contact_form form nav textarea:checked + label span:last-child {
+      opacity: 1;
+      transform: rotate(-45deg); } }
+  nav input ~ ul, nav .contact_us .contact_form form textarea ~ ul, .contact_us .contact_form form nav textarea ~ ul {
     width: 85%;
     display: inline-block;
     float: right;
     margin: 0;
     padding: 0; }
-    nav ul li {
+    @media (max-width: 1299px) {
+      nav input ~ ul, nav .contact_us .contact_form form textarea ~ ul, .contact_us .contact_form form nav textarea ~ ul {
+        display: none;
+        transition: 2s;
+        background: #000;
+        opacity: 0.7;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        z-index: 1; } }
+    nav input ~ ul li, nav .contact_us .contact_form form textarea ~ ul li, .contact_us .contact_form form nav textarea ~ ul li {
       display: inline-block;
       float: left;
       padding: 35px 1%; }
-      nav ul li:hover {
+      @media (max-width: 1299px) {
+        nav input ~ ul li, nav .contact_us .contact_form form textarea ~ ul li, .contact_us .contact_form form nav textarea ~ ul li {
+          display: none;
+          float: none;
+          padding: 15px; } }
+      nav input ~ ul li:hover, nav .contact_us .contact_form form textarea ~ ul li:hover, .contact_us .contact_form form nav textarea ~ ul li:hover {
         border-bottom: 5px solid #B88B58; }
-      nav ul li a {
+        @media (max-width: 1299px) {
+          nav input ~ ul li:hover, nav .contact_us .contact_form form textarea ~ ul li:hover, .contact_us .contact_form form nav textarea ~ ul li:hover {
+            border-bottom: none;
+            background: #373737; } }
+      nav input ~ ul li a, nav .contact_us .contact_form form textarea ~ ul li a, .contact_us .contact_form form nav textarea ~ ul li a {
         color: #FFF;
         font-size: 13px;
         font-weight: 700; }
+  nav input:checked ~ ul, nav .contact_us .contact_form form textarea:checked ~ ul, .contact_us .contact_form form nav textarea:checked ~ ul {
+    display: block; }
+    nav input:checked ~ ul li, nav .contact_us .contact_form form textarea:checked ~ ul li, .contact_us .contact_form form nav textarea:checked ~ ul li {
+      display: block; }
 
 /* --HEADER-- */
 header {
@@ -210,7 +272,7 @@ header {
   header .button_brown {
     margin: 1% 0 10%; }
   header .btn_icon {
-    right: 5%; }
+    right: 10%; }
 
 /* --ABOUT US-- */
 .about_us {
