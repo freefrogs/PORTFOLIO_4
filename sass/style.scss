@@ -388,9 +388,14 @@ header {
 				margin-bottom: 5%;
 			}
 		}
+		video {
+			display: none;
+			box-shadow: 0 15px 30px $light_grey;
+		}
 		img {
 			box-shadow: 0 15px 30px $light_grey;
 			width: 100%;
+			cursor: pointer;
 		}
 	}
 }

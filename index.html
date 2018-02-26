@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<nav>
+		<nav id="2home">
 			<div class="container">
 				<a href="#"><img src="images/nav_logo.png" alt="logo"></a>
 				<input id="burger" type="checkbox">
@@ -17,16 +17,16 @@
 					<span></span>
 					<span></span>
 				</label>
-				<ul>
-					<li><a href="#">home</a></li>
-					<li><a href="#aboutUs">about us</a></li>
-					<li><a href="#services">services</a></li>
-					<li><a href="#ourProjects">our projects</a></li>
-					<li><a href="#ourTeam">our team</a></li>
-					<li><a href="#happyClients">happy clients</a></li>
-					<li><a href="#price">price</a></li>
-					<li><a href="#someFacts">some facts</a></li>
-					<li><a href="#contactUs">contact us</a></li>
+				<ul id="navigation">
+					<li><a href="#2home">home</a></li>
+					<li><a href="#1aboutUs">about us</a></li>
+					<li><a href="#1services">services</a></li>
+					<li><a href="#1ourProjects">our projects</a></li>
+					<li><a href="#2ourTeam">our team</a></li>
+					<li><a href="#2happyClients">happy clients</a></li>
+					<li><a href="#3price">price</a></li>
+					<li><a href="#3someFacts">some facts</a></li>
+					<li><a href="#3contactUs">contact us</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -41,7 +41,7 @@
 			</div>
 			<button class="btn_icon"><i class="fa fa-phone"></i></button>
 		</header>
-		<section class="about_us" id="aboutUs">
+		<section class="about_us" id="1aboutUs">
 			<div class="container">
 				<h2 class="h2_black">about us</h2>
 				<h4>who we are?</h4>
@@ -51,12 +51,15 @@
 						<button class="button_brown">learn more</button>
 					</div>
 					<div class="col-5 col-m-12">
-						<img src="images/aboutUs_film.jpg" alt="about us - movie">
+						<img src="images/aboutUs_film.jpg" alt="about us - movie" id="film_background">
+						<video width="100%" id="film" controls>
+						<source src="video/videoplayback.mp4" type="video/mp4" >
+						Your browser does not support the video</video>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="services" id="services">
+		<section class="services" id="1services">
 			<div class="container">
 				<h2 class="h2_white">service</h2>
 				<h4>services that we provide</h4>
@@ -84,7 +87,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="our_projects" id="ourProjects">
+		<section class="our_projects" id="1ourProjects">
 			<div class="container">
 				<h2 class="h2_black">our projects</h2>
 				<h4>what we create</h4>
@@ -185,7 +188,7 @@
 				<button class="button_brown">more projects</button>
 			</div>
 		</section>
-		<section class="our_team" id="ourTeam">
+		<section class="our_team" id="2ourTeam">
 			<div class="container">
 				<h2 class="h2_white">our team</h2>
 				<h4>our co-workers</h4>
@@ -240,7 +243,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="happy_clients" id="happyClients">
+		<section class="happy_clients" id="2happyClients">
 			<div class="container">
 				<h2 class="h2_black">happy clients</h2>
 				<h4>client reviews</h4>
@@ -264,7 +267,7 @@
 				<img src="images/brand_6.png" alt="brand logo">
 			</div>
 		</section>
-		<section class="price" id="price">
+		<section class="price" id="3price">
 			<div class="container">
 				<h2 class="h2_black">price</h2>
 				<h4>pricing table</h4>
@@ -339,7 +342,7 @@
 				<button class="button_brown">get in touch</button>
 			</div>
 		</section>
-		<section class="some_facts" id="someFacts">
+		<section class="some_facts" id="3someFacts">
 			<div class="container">
 				<h2 class="h2_white">some facts</h2>
 				<h4> about our works</h4>
@@ -383,7 +386,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact_us" id="contactUs">
+		<section class="contact_us" id="3contactUs">
 			<div class="contact_form">
 				<h2 class="h2_black">contact us</h2>
 				<h4>our agency located in melbourne, australia</h4>
@@ -435,5 +438,7 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

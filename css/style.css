@@ -340,9 +340,13 @@ header {
     @media (max-width: 992px) {
       .about_us .row .button_brown {
         margin-bottom: 5%; } }
+    .about_us .row video {
+      display: none;
+      box-shadow: 0 15px 30px #AEAEAE; }
     .about_us .row img {
       box-shadow: 0 15px 30px #AEAEAE;
-      width: 100%; }
+      width: 100%;
+      cursor: pointer; }
 
 /* --SERVICES-- */
 .services {
@@ -428,41 +432,33 @@ header {
         .our_projects .small_nav li a:hover {
           border-bottom: 5px solid #B88B58; }
   .our_projects .gallery {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 2.5%; }
     .our_projects .gallery .gallery-element {
       position: relative;
-      -ms-flex: 23%;
-          flex: 23%;
+      flex: 23%;
       margin: 1%;
       padding: 0;
       background: #000;
       cursor: pointer; }
       @media (max-width: 1100px) {
         .our_projects .gallery .gallery-element {
-          -ms-flex: 31%;
-              flex: 31%; } }
+          flex: 31%; } }
       @media (max-width: 800px) {
         .our_projects .gallery .gallery-element {
-          -ms-flex: 46%;
-              flex: 46%; } }
+          flex: 46%; } }
       @media (max-width: 500px) {
         .our_projects .gallery .gallery-element {
-          -ms-flex: 98%;
-              flex: 98%; } }
+          flex: 98%; } }
       .our_projects .gallery .gallery-element:hover img {
         opacity: 0.4; }
       .our_projects .gallery .gallery-element:hover .gallery-hover {
         opacity: 1; }
       .our_projects .gallery .gallery-element img {
         width: 100%;
-        -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
         vertical-align: middle;
         transition: .5s; }
       .our_projects .gallery .gallery-element .gallery-hover {
@@ -776,10 +772,6 @@ header {
       border-bottom: 2px solid #9E9E9E;
       background: inherit;
       padding: 12px 0; }
-      .contact_us .contact_form form input::-webkit-input-placeholder, .contact_us .contact_form form textarea::-webkit-input-placeholder {
-        font-size: 13px; }
-      .contact_us .contact_form form input:-ms-input-placeholder, .contact_us .contact_form form textarea:-ms-input-placeholder {
-        font-size: 13px; }
       .contact_us .contact_form form input::placeholder, .contact_us .contact_form form textarea::placeholder {
         font-size: 13px; }
       .contact_us .contact_form form input:focus, .contact_us .contact_form form textarea:focus {
@@ -806,10 +798,6 @@ header {
       margin: 10% 1% 0;
       padding: 0;
       resize: none; }
-      .contact_us .contact_form form textarea::-webkit-input-placeholder {
-        font-size: 15px; }
-      .contact_us .contact_form form textarea:-ms-input-placeholder {
-        font-size: 15px; }
       .contact_us .contact_form form textarea::placeholder {
         font-size: 15px; }
     .contact_us .contact_form form button {
@@ -942,14 +930,6 @@ footer {
         @media (max-width: 250px) {
           footer .row form input, footer .row .contact_us .contact_form form textarea, .contact_us .contact_form footer .row form textarea {
             padding: 12px 0; } }
-        footer .row form input::-webkit-input-placeholder, footer .row .contact_us .contact_form form textarea::-webkit-input-placeholder, .contact_us .contact_form footer .row form textarea::-webkit-input-placeholder {
-          color: #9E9E9E;
-          font-size: 13px;
-          font-weight: 300; }
-        footer .row form input:-ms-input-placeholder, footer .row .contact_us .contact_form form textarea:-ms-input-placeholder, .contact_us .contact_form footer .row form textarea:-ms-input-placeholder {
-          color: #9E9E9E;
-          font-size: 13px;
-          font-weight: 300; }
         footer .row form input::placeholder, footer .row .contact_us .contact_form form textarea::placeholder, .contact_us .contact_form footer .row form textarea::placeholder {
           color: #9E9E9E;
           font-size: 13px;

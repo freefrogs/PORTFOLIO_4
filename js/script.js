@@ -20,3 +20,13 @@ $('a[href^="#3"]').on('click', function (e) {
 		scrollTop: $($(this).attr('href')).offset().top
 	}, 1800);
 });
+
+//play video
+var $bacgroundFilm = $('#film_background');
+var $film = $('#film');
+
+$bacgroundFilm.on('click', function() {
+	$bacgroundFilm.css('display', 'none');
+	$film.fadeIn('slow');
+	$film.trigger('play');
+});
