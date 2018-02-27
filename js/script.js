@@ -30,3 +30,19 @@ $bacgroundFilm.on('click', function() {
 	$film.fadeIn('slow');
 	$film.trigger('play');
 });
+
+// header modal (click on phone button)
+var $modal = $('#header_modal');
+var $done = $('#done');
+
+$('#btn_modal').on('click', function() {
+	$modal.fadeIn();
+});
+$('#btn_done').on('click', function() {
+	$done.fadeIn();
+});
+$done.click(function() {
+		$modal.fadeOut();
+		$done.fadeOut();
+});
+

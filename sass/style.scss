@@ -1,6 +1,19 @@
 /* --GENERAL-- */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 
+@mixin center($position) {
+	position: absolute;
+	@if $position == 'horizontal' {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	@else if $position == 'both' {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%)
+	}
+}
+
 $white: #FFF;
 $black: #000;
 $brown: #B88B58;
@@ -31,7 +44,7 @@ nav, header, section, footer {
 	margin: 0 auto;
 }
 
-h2, h3, h4, h6 {
+h1, h2, h3, h4, h6 {
 	text-transform: uppercase;
 }
 
@@ -85,6 +98,22 @@ section {
 	margin: 0 auto;
 	width: 80%;
 	text-align: center;
+}
+
+input {
+	border: none;
+	border-bottom: 2px solid $grey_form;
+	background: inherit;
+	padding: 12px 0;
+	font-family: 'Montserrat', sans-serif;
+	&::placeholder {
+		font-size: 13px;
+	}
+	&:focus {
+		border: none;
+		border-bottom: 2px solid $black;
+		outline: 0;
+	}
 }
 
 [class^="button_"] {
@@ -231,7 +260,7 @@ nav {
 			background: $grey_btn;
 			border-radius: 50%;
 			box-shadow: 0 0 10px $brown;
-			z-index: 3;
+			z-index: 4;
 			span {
 				position: absolute;
 				width: 60%;
@@ -282,7 +311,7 @@ nav {
 			top: 0;
 			left: 0;
 			width: 200px;
-			z-index: 2;
+			z-index: 3;
 		}
 		@media (max-width: 270px) {
 			width: 150px;
@@ -319,8 +348,8 @@ nav {
 }
 
 /* --HEADER-- */
+
 header {
-	text-transform: uppercase;
 	background: url("../images/header_background.jpg") center 0/cover;
 	text-align: center;
 	padding: 1%;
@@ -347,8 +376,9 @@ header {
 			color: $brown;
 		}
 	}
-	p {
+	.p_header {
 		font-size: 24px;
+		text-transform: uppercase;
 		font-weight: 700;
 		color: $white;
 		padding: 0.5% 0 2%;
@@ -364,6 +394,53 @@ header {
 		right: 10%;
 		@media (max-width: 992px) {
 			left: 5%;
+		}
+	}
+	//modal
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 25vh;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: auto;
+		background: rgba(0,0,0,0.6);
+		.modal_content {
+			width: 25.5%;
+			margin: 0 auto;
+			padding: 1% 0;
+			background: $white;
+			border-radius: 3px;
+			.input_modal {
+				display: block;
+				padding: 12px 8%;
+				margin: 10% auto 0;
+			}
+			.button_brown {
+				display: block;
+				margin: 14% auto 17%;
+			}
+		}
+		.modal_done {
+			display: none;
+			text-align: center;
+			width: 40%;
+			padding: 3% 0;
+			background: $white;
+			border-radius: 3px;
+			box-shadow: 0 0 10px $light-grey;
+			@include center(both);
+			h4 {
+				font-size: 20px;
+			}
+			.p_modal {
+				font-size: 14px;
+				color: $light_grey;
+				font-weight: 400;
+			}
 		}
 	}
 }
@@ -532,10 +609,7 @@ header {
 				width: 100%;
 				color: $white;
 				opacity: 0;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
+				@include center(both);
 				transition: .5s;
 				h3 {
 					font-weight: 400;
@@ -903,20 +977,6 @@ header {
 			@media (max-width: 500px) {
 				padding-top: 2%;
 			}
-			input {
-				border: none;
-				border-bottom: 2px solid $grey_form;
-				background: inherit;
-				padding: 12px 0;
-				&::placeholder {
-					font-size: 13px;
-				}
-				&:focus {
-					border: none;
-					border-bottom: 2px solid $black;
-					outline: 0;
-				}
-			}
 			.input_short {
 				width: 47%;
 				margin: 0 3.5% 5% 0;
@@ -956,7 +1016,7 @@ header {
 		position: relative;
 		.btn_icon {
 			left: 5%;
-			z-index: 1;
+			z-index: 2;
 		}
 		.container {
 			padding: 3% 0;
@@ -1039,8 +1099,7 @@ footer {
 			left: 6%;
 			@media (max-width: 1100px) {
 				bottom: 1%;
-				right: 50%;
-				transform: translate(50%, 0);
+				@include center(horizontal);
 			}
 			@media (max-width: 250px) {
 				font-size: 10px;
@@ -1075,10 +1134,7 @@ footer {
 			input {
 				display: block;
 				margin: 8% auto;
-				border: none;
 				border-bottom: 2px solid $light_grey;
-				background: inherit;
-				padding: 12px 0;
 				text-align: center;
 				color: $white;
 				@media (max-width: 1100px) {
@@ -1093,13 +1149,10 @@ footer {
 				}
 				&::placeholder {
 					color: $grey_form;
-					font-size: 13px;
 					font-weight: 300;
 				}
 				&:focus {
-					border: none;
 					border-bottom: 2px solid $white;
-					outline: 0;
 				}
 			}
 		}

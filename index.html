@@ -32,14 +32,25 @@
 		</nav>
 		<header>
 			<h1>design is about<br><span>communication </span></h1>
-			<p>call us: +00 0 1234 5678</p>
+			<p class="p_header">call us: +00 0 1234 5678</p>
 			<button class="button_brown">get in touch!</button>
 			<div class="pagination">
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
-			<button class="btn_icon"><i class="fa fa-phone"></i></button>
+			<button class="btn_icon" id="btn_modal"><i class="fa fa-phone"></i></button>
+			<div id="header_modal" class="modal">
+				<form class="modal_content">
+					<input class="input_modal" type="text" placeholder="NAME">
+					<input class="input_modal" type="text" placeholder="+00 0 1234 5678">
+					<button class="button_brown" id="btn_done">call me back!</button>
+				</form>
+				<div class="modal_done" id="done">
+					<h4>done!</h4>
+					<p class="p_modal">We will soon get back to you</p>
+				</div>
+			</div>
 		</header>
 		<section class="about_us" id="1aboutUs">
 			<div class="container">
