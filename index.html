@@ -11,6 +11,7 @@
 		<nav id="2home">
 			<div class="container">
 				<a href="#"><img src="images/nav_logo.png" alt="logo"></a>
+				<!-- hamburger navigation -->
 				<input id="burger" type="checkbox">
 				<label for="burger">
 					<span></span>
@@ -31,15 +32,40 @@
 			</div>
 		</nav>
 		<header>
-			<h1>design is about<br><span>communication </span></h1>
-			<p class="p_header">call us: +00 0 1234 5678</p>
-			<button class="button_brown">get in touch!</button>
+			<!-- slideshow -->
+			<div class="slideshow">
+				<div class="slide fade">
+					<img src="images/header_background.jpg" alt="communication">
+					<div class="hero">
+						<h1>design is about<br><span>communication</span></h1>
+						<p class="p_header">call us: +00 0 1234 5678</p>
+						<button class="button_brown">get in touch!</button>
+					</div>
+				</div>
+				<div class="slide fade">
+					<img src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="people" class="sepia">
+					<div class="hero">
+						<h1>design is about<br><span>people</span></h1>
+						<p class="p_header">call us: +00 0 1234 5678</p>
+						<button class="button_brown">contact us!</button>
+					</div>
+				</div>
+				<div class="slide fade">
+					<img src="https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="idea" class="sepia">
+					<div class="hero">
+						<h1>design is about<br><span>ideas</span></h1>
+						<p class="p_header">call us: +00 0 1234 5678</p>
+						<button class="button_brown">See more!</button>
+					</div>
+				</div>
+			</div>
 			<div class="pagination">
-				<span></span>
-				<span></span>
-				<span></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
 			</div>
 			<button class="btn_icon" id="btn_modal"><i class="fa fa-phone"></i></button>
+			<!-- modal -->
 			<div id="header_modal" class="modal">
 				<form class="modal_content">
 					<input class="input_modal" type="text" placeholder="NAME">
@@ -64,7 +90,7 @@
 					</div>
 					<div class="col-5 col-m-12">
 						<img src="images/aboutUs_film.jpg" alt="about us - movie" id="film_background">
-						<video width="100%" id="film" controls>
+						<video id="film" controls>
 						<source src="video/videoplayback.mp4" type="video/mp4" >
 						Your browser does not support the video</video>
 					</div>
