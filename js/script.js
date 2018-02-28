@@ -36,16 +36,16 @@ $(document).ready(function() {
 	var $modal = $('#header_modal');
 	var $done = $('#done');
 
-	$('#btn_modal').on('click', function() {
+	$('#btn_modal').click(function() {
 		$modal.fadeIn();
 	});
 	$('#btn_done').on('click', function() {
 		$done.fadeIn();
 	});
-	/*$done.click(function() {
+	$done.click(function() {
 			$modal.fadeOut();
 			$done.fadeOut();
-	});*/
+	});
 
 	//map - slide up & down
 	var $upDown = $('#up_down');
